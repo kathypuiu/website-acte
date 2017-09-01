@@ -8,7 +8,7 @@ class Document(models.Model):
     category = models.CharField(max_length=50, default='')
     institution = models.CharField(max_length=100)
     address = models.CharField(max_length=100)
-    requirements = JSONField()
+    requirements = models.CharField(max_length=500)
 
     def __str__(self):
         return self.url_name
@@ -17,7 +17,7 @@ class Institution(models.Model):
     url_name = models.CharField(max_length=50)
     name = models.CharField(max_length=100)
     address = models.CharField(max_length=100)
-    documents = JSONField()
+    documents = models.CharField(max_length=500)
 
     def __str__(self):
         return self.url_name
