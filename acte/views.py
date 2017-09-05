@@ -6,3 +6,6 @@ def index(request):
 
 def categorii(request):
     return render(request, 'acte/home.html')    #Update this one later
+
+def contact(request):
+    return render(request, 'acte/home.html')    #Update this one later
