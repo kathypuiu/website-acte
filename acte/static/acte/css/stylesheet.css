@@ -12,7 +12,7 @@
 } */
 
 body {
-  background-image:url(https://images.pexels.com/photos/418288/pexels-photo-418288.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-image:url(http://i.imgur.com/dtT5QKm.jpg);
 
      background-repeat:no-repeat;
 
@@ -25,7 +25,7 @@ main {
 }
 
 #title {
-  font-family: 'Playball';font-size: 50px;
+  font-family: 'Playball';font-size: 70px;
 }
 
 nav{

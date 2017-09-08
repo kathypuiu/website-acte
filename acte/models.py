@@ -12,7 +12,7 @@ class Document(models.Model):
     extra = models.CharField(max_length=500)
 
     def __str__(self):
-        return self.url_name
+        return self.slug
 
 class Institution(models.Model):
     slug = models.SlugField(max_length=50)
@@ -23,4 +23,4 @@ class Institution(models.Model):
     links = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.url_name
+        return self.slug

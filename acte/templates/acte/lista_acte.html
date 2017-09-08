@@ -1,5 +1,14 @@
 {% extends "acte/header.html" %}
 {% block content %}
-
+<table>
+  <thead>
+    <tr class="bold"><th>Document</th><th>Institutie</th><th>Adresa</th></tr>
+  </thead>
+  <tbody>
+    {% for document in object_list %}
+    <tr><td class="bold">{{document.name}}</td><td>{{document.institution}}</td><td>{{document.address}}</td></tr>
+    {% endfor %}
+</tbody>
+</table>
 
 {% endblock %}
