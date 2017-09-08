@@ -1,15 +1,23 @@
 
-body {
+/*body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006e2e+0,006e2e+100;Green+Flat+%233 */
-    background: #006e2e; /* Old browsers */
-    background: -moz-linear-gradient(top, #006e2e 0%, #006e2e 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #006e2e 0%,#006e2e 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #006e2e 0%,#006e2e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', endColorstr='#006e2e',GradientType=0 ); /* IE6-9 */
+
+    background: #006e2e;
+    background: -moz-linear-gradient(top, #006e2e 0%, #006e2e 100%);
+    background: -webkit-linear-gradient(top, #006e2e 0%,#006e2e 100%);
+    background: linear-gradient(to bottom, #006e2e 0%,#006e2e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', endColorstr='#006e2e',GradientType=0 );
+} */
+
+body {
+  background-image:url(https://images.pexels.com/photos/418288/pexels-photo-418288.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+
+     background-repeat:no-repeat;
+
+     background-size:cover;
+
 }
 
 main {
@@ -26,4 +34,8 @@ nav{
 
 li{
   font-family: 'Roboto';font-size: 50px;
+}
+
+input:not([type]), input[type="text"]:not(.browser-default), input[type="password"]:not(.browser-default), input[type="email"]:not(.browser-default), input[type="url"]:not(.browser-default), input[type="time"]:not(.browser-default), input[type="date"]:not(.browser-default), input[type="datetime"]:not(.browser-default), input[type="datetime-local"]:not(.browser-default), input[type="tel"]:not(.browser-default), input[type="number"]:not(.browser-default), input[type="search"]:not(.browser-default), textarea.materialize-textarea {
+  border-bottom: 2px solid #f68c03;
 }
