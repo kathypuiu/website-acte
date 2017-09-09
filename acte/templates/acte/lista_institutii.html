@@ -1,12 +1,12 @@
 {% extends "acte/header.html" %}
 {% block content %}
-<table>
+<table class="responsive-table">
   <thead>
     <tr class="bold"><th>Institutie</th><th>Adresa</th><th>Program</th></tr>
   </thead>
   <tbody>
     {% for institution in object_list %}
-    <tr><td class="bold">{{institution.name}}</td><td>{{institution.address}}</td><td>{{institution.program}}</td></tr>
+    <tr><td class="bold"><a href="/institutii/{{ institution.slug }}">{{institution.name}}</a></td><td>{{institution.address}}</td><td>{{institution.program}}</td></tr>
     {% endfor %}
   </tbody>
 </table>

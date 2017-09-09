@@ -1,5 +1,16 @@
 {% extends "acte/header.html" %}
 {% block content %}
-
+<table class="responsive-table">
+  <thead>
+    <tr class="bold"><th>Document</th><th>Institutie</th><th>Adresa</th></tr>
+  </thead>
+  <tbody>
+    {% for document in object_list %}
+    {% if document.category == 'medical' %}
+  <tr><td class="bold"><a href="/documente/{{ document.slug }}">{{document.name}}</a></td><td>{{document.institution}}</td><td>{{document.address}}</td></tr>
+     {% endif %}
+    {% endfor %}
+</tbody>
+</table>
 
 {% endblock %}

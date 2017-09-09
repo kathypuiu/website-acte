@@ -6,7 +6,7 @@
   </thead>
   <tbody>
     {% for document in object_list %}
-    {% if document.category == 'educational' %}
+    {% if document.category == 'imobiliare' %}
   <tr><td class="bold"><a href="/documente/{{ document.slug }}">{{document.name}}</a></td><td>{{document.institution}}</td><td>{{document.address}}</td></tr>
      {% endif %}
     {% endfor %}
