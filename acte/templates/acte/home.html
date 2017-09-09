@@ -1,5 +1,6 @@
 {% extends "acte/header.html" %}
 {% block content %}
+{% load staticfiles %}
 <div class="row" style="padding: 100px 100px">
        <div class="input-field col s12">
          <input placeholder="Placeholder" id="search" type="text" class="validate">
@@ -14,11 +15,11 @@
        <a href="/categorie/identitate">
        <div class="card-image">
          <img src="https://previews.123rf.com/images/rastudio/rastudio1505/rastudio150500424/39684086-Car-icon-thin-line-for-web-and-mobile-modern-minimalistic-flat-design-Vector-dark-grey-icon-on-light-Stock-Vector.jpg">
-         <span class="card-title">Card Title</span>
+
        </div>
      </a>
        <div class="card-action">
-         <a href="#">This is a link</a>
+         <a href="/categorie/identitate">identitate</a>
        </div>
      </div>
    </div>
@@ -26,12 +27,12 @@
  <div class="card">
    <a href="/categorie/auto">
    <div class="card-image">
-     <img src="https://previews.123rf.com/images/rastudio/rastudio1505/rastudio150500424/39684086-Car-icon-thin-line-for-web-and-mobile-modern-minimalistic-flat-design-Vector-dark-grey-icon-on-light-Stock-Vector.jpg">
-     <span class="card-title">Card Title</span>
+     <img src="{% static 'acte/img/car.png' %}">
+
    </div>
         </a>
    <div class="card-action">
-     <a href="#">This is a link</a>
+     <a href="/categorie/auto">auto</a>
    </div>
  </div>
 </div>
@@ -40,11 +41,11 @@
   <a href="/categorie/firma">
 <div class="card-image">
   <img src="https://previews.123rf.com/images/rastudio/rastudio1505/rastudio150500424/39684086-Car-icon-thin-line-for-web-and-mobile-modern-minimalistic-flat-design-Vector-dark-grey-icon-on-light-Stock-Vector.jpg">
-  <span class="card-title">Card Title</span>
+
 </div>
      </a>
 <div class="card-action">
-  <a href="#">This is a link</a>
+  <a href="/categorie/firma">firma</a>
 </div>
 </div>
 </div>
@@ -53,11 +54,11 @@
   <a href="/categorie/imobiliar">
 <div class="card-image">
   <img src="https://previews.123rf.com/images/rastudio/rastudio1505/rastudio150500424/39684086-Car-icon-thin-line-for-web-and-mobile-modern-minimalistic-flat-design-Vector-dark-grey-icon-on-light-Stock-Vector.jpg">
-  <span class="card-title">Card Title</span>
+
 </div>
      </a>
 <div class="card-action">
-  <a href="#">This is a link</a>
+  <a href="/categorie/imobiliar">imobiliare</a>
 </div>
 </div>
 </div>
@@ -69,11 +70,11 @@
            <a href="/categorie/social">
            <div class="card-image">
              <img src="https://previews.123rf.com/images/rastudio/rastudio1505/rastudio150500424/39684086-Car-icon-thin-line-for-web-and-mobile-modern-minimalistic-flat-design-Vector-dark-grey-icon-on-light-Stock-Vector.jpg">
-             <span class="card-title">Card Title</span>
+
            </div>
                 </a>
            <div class="card-action">
-             <a href="#">This is a link</a>
+             <a href="/categorie/social">social</a>
            </div>
          </div>
        </div>
@@ -82,11 +83,11 @@
        <a href="/categorie/educational">
        <div class="card-image">
          <img src="https://previews.123rf.com/images/rastudio/rastudio1505/rastudio150500424/39684086-Car-icon-thin-line-for-web-and-mobile-modern-minimalistic-flat-design-Vector-dark-grey-icon-on-light-Stock-Vector.jpg">
-         <span class="card-title">Card Title</span>
+
        </div>
             </a>
        <div class="card-action">
-         <a href="#">This is a link</a>
+         <a href="/categorie/educational">educational</a>
        </div>
      </div>
     </div>
@@ -95,11 +96,11 @@
       <a href="/categorie/medical">
     <div class="card-image">
       <img src="https://previews.123rf.com/images/rastudio/rastudio1505/rastudio150500424/39684086-Car-icon-thin-line-for-web-and-mobile-modern-minimalistic-flat-design-Vector-dark-grey-icon-on-light-Stock-Vector.jpg">
-      <span class="card-title">Card Title</span>
+
     </div>
          </a>
     <div class="card-action">
-      <a href="#">This is a link</a>
+      <a href="/categorie/medical">medical</a>
     </div>
     </div>
     </div>
@@ -108,11 +109,11 @@
       <a href="/categorie/etc">
     <div class="card-image">
       <img src="https://previews.123rf.com/images/rastudio/rastudio1505/rastudio150500424/39684086-Car-icon-thin-line-for-web-and-mobile-modern-minimalistic-flat-design-Vector-dark-grey-icon-on-light-Stock-Vector.jpg">
-      <span class="card-title">Card Title</span>
+
     </div>
          </a>
     <div class="card-action">
-      <a href="#">This is a link</a>
+      <a href="/categorie/etc">alte domenii</a>
     </div>
     </div>
     </div>
