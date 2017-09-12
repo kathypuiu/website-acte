@@ -1,50 +1,40 @@
-
-/*body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-
-    background: #006e2e;
-    background: -moz-linear-gradient(top, #006e2e 0%, #006e2e 100%);
-    background: -webkit-linear-gradient(top, #006e2e 0%,#006e2e 100%);
-    background: linear-gradient(to bottom, #006e2e 0%,#006e2e 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', endColorstr='#006e2e',GradientType=0 );
-} */
+/*!
+ * Start Bootstrap - One Page Wonder (http://startbootstrap.com/template-overviews/one-page-wonder)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
+ */
 
 body {
-  background-image:url(https://images.unsplash.com/photo-1480619425648-e242cb5d2bea?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
-
-     background-repeat:no-repeat;
-
-     background-size:cover;
-
+    padding-top: 54px;
 }
 
-main {
-  flex: 1 1 auto;
-  min-height: 100vh;
- flex-direction: column;
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
 }
 
-#title {
-    font-family: 'Abel';font-size: 50px;}
-
-nav{
-  background-color: #ffffff00;
-  background-color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0);
-  background-color: hsla(360, 100%, 100%, 0);
-
+header.masthead {
+    background: url('https://images.unsplash.com/photo-1480619425648-e242cb5d2bea?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
-li{
-  font-family: 'Roboto';font-size: 50px;
+header.masthead > .overlay {
+    padding: 5rem 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
 }
 
-input:not([type]), input[type="text"]:not(.browser-default), input[type="password"]:not(.browser-default), input[type="email"]:not(.browser-default), input[type="url"]:not(.browser-default), input[type="time"]:not(.browser-default), input[type="date"]:not(.browser-default), input[type="datetime"]:not(.browser-default), input[type="datetime-local"]:not(.browser-default), input[type="tel"]:not(.browser-default), input[type="number"]:not(.browser-default), input[type="search"]:not(.browser-default), textarea.materialize-textarea {
-  border-bottom: 2px solid #f68c03;
+@media (min-width: 992px) {
+    header.masthead > .overlay {
+        padding: 10rem 0;
+    }
 }
 
-.dropdown-content li > a, .dropdown-content li > span{
-  color : #814010;
+.col-lg-8{
+  margin: 0 auto;
+
 }
