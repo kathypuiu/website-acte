@@ -15,7 +15,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
 
-
+<script>
+var shiftWindow = function() { scrollBy(0, -50) };
+window.addEventListener("hashchange", shiftWindow);
+</script>
 </head>
 
 <body>
@@ -28,9 +31,23 @@
 					         </button>
 					         <div class="collapse navbar-collapse" id="navbarResponsive">
 					           <ul class="navbar-nav ml-auto">
-					             
+
 					             <li class="nav-item">
-					               <a class="nav-link" href="/categorii">Categorii</a>
+												 <div class="dropdown">
+												   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												     Categorii
+												   </button>
+												   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												     <a class="dropdown-item" href="/categorie/identitate">Identitate si Evidente</a>
+												     <a class="dropdown-item" href="/categorie/auto">Auto</a>
+												     <a class="dropdown-item" href="/categorie/firma">Firma</a>
+														 <a class="dropdown-item" href="/categorie/imobiliar">Imobiliare</a>
+												     <a class="dropdown-item" href="/categorie/social">Social</a>
+												     <a class="dropdown-item" href="/categorie/educational">Educational</a>
+														 <a class="dropdown-item" href="/categorie/medical">Medical</a>
+														 <a class="dropdown-item" href="/categorie/etc">Alte domenii</a>
+												   </div>
+												 </div>
 					             </li>
 					             <li class="nav-item">
 					               <a class="nav-link" href="/institutii">Institutii</a>
@@ -45,18 +62,6 @@
 					         </div>
 					       </div>
 					     </nav>
-
-
-<!--	<ul id="dropdown1" class="dropdown-content">
-  <li><a href="/categorie/identitate">Identitate si Evidente</a></li>
-  <li><a href="/categorie/auto">Auto</a></li>
-  <li><a href="/categorie/firma">Firma</a></li>
-	<li><a href="/categorie/imobiliar">Imobiliare</a></li>
-  <li><a href="/categorie/social">Social</a></li>
-  <li><a href="/categorie/educational">Educational</a></li>
-	<li><a href="/categorie/medical">Medical</a></li>
-  <li><a href="/categorie/etc">Alte Domenii</a></li>
-</ul> -->
 
 
 	 		 {% block content %}
