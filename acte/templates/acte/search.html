@@ -1,0 +1,17 @@
+{% extends "acte/header.html" %}
+{% block content %}
+<div class="container">
+
+
+<table class="table table-responsive">
+  <thead>
+    <tr class="bold"><th>Document</th><th>Institutie</th><th>Adresa</th></tr>
+  </thead>
+  <tbody>
+    {% for document in object_list %}
+  <tr><td class="bold"><a href="/documente/{{ document.slug }}">{{document.name}}</a></td><td>{{document.institution}}</td><td>{{document.address}}</td></tr>
+    {% endfor %}
+</tbody>
+</table>
+</div>
+{% endblock %}
