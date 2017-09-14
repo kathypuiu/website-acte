@@ -6,10 +6,10 @@
         <div class="container">
           <h1 class="display-1 text-white">ActeNecesare.ro</h1>
           <h2 class="display-4 text-white">Gaseste actele de care ai nevoie</h2>
-          <form action="{% url 'watson:search' %}">
+          <form>
           <div class="form-group">
             <div class="col-lg-8">
-              <input class="form-control" id="inputSearch" placeholder="Search" type="text" name="q" value="{{request.GET.q}}">
+              <input class="form-control" id="inputSearch" placeholder="Search" type="text">
             </div>
           </div>
         </form>
@@ -21,9 +21,11 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5 order-2">
+            <a href="/categorie/identitate" >
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="https://image.flaticon.com/icons/svg/148/148858.svg" alt="">
+              <img class="img-fluid rounded-circle" src="{% static 'acte/img/id.png' %}" alt="">
             </div>
+          </a>
           </div>
           <div class="col-md-7 order-1">
             <div class="p-5">
@@ -39,9 +41,11 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5">
+            <a href="/categorie/auto">
             <div class="p-5">
               <img class="img-fluid rounded-circle" src="{% static 'acte/img/car.svg' %}" alt="">
             </div>
+          </a href>
           </div>
           <div class="col-md-7">
             <div class="p-5">
@@ -56,15 +60,19 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5 order-2">
+  <a href="/categorie/firma">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="https://image.flaticon.com/icons/png/512/144/144041.png" alt="">
+              <img class="img-fluid rounded-circle" src="{% static 'acte/img/money.png' %}" alt="">
             </div>
+  </a>
           </div>
           <div class="col-md-7 order-1">
+
             <div class="p-5">
               <h2 class="display-4">Acte Firma </h2>
               <p>Activitati Medicale</p>
             </div>
+
           </div>
         </div>
       </div>
@@ -74,15 +82,19 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5">
+  <a href="/categorie/imobiliar">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="https://image.flaticon.com/icons/png/512/543/543977.png" alt="">
+              <img class="img-fluid rounded-circle" src="{% static 'acte/img/houz.png' %}" alt="">
             </div>
+              </a >
           </div>
           <div class="col-md-7">
+
             <div class="p-5">
               <h2 class="display-4">Acte Imobiliare</h2>
               <p>Vanzare-Cumparare imobiliare, Cadastru si publicitate imobiliara, Inchirieri imobiliare, Asigurari imobiliare </p>
           </div>
+
         </div>
       </div>
     </section>
@@ -91,15 +103,20 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5 order-2">
+
+                <a href="/categorie/social">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="https://image.flaticon.com/icons/png/512/291/291930.png" alt="">
+              <img class="img-fluid rounded-circle" src="{% static 'acte/img/social.png' %}" alt="">
             </div>
+              </a >
           </div>
           <div class="col-md-7 order-1">
+
             <div class="p-5">
               <h2 class="display-4">Ajutoare Sociale</h2>
               <p>Ajutor de Somaj, Pensionari,Ajutoare pentru copii, Ajutoare pentru Handicap,Subventii </p>
             </div>
+
           </div>
         </div>
       </div>
@@ -109,9 +126,11 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5">
+            <a href="/categorie/educational">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="https://image.flaticon.com/icons/svg/201/201612.svg" alt="">
+              <img class="img-fluid rounded-circle" src="{% static 'acte/img/scoala.png' %}" alt="">
             </div>
+          </a>
           </div>
           <div class="col-md-7">
             <div class="p-5">
@@ -126,11 +145,14 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5 order-2">
+<a href="/categorie/medical">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="https://image.flaticon.com/icons/svg/119/119042.svg" alt="">
+              <img class="img-fluid rounded-circle" src="{% static 'acte/img/hospital.png' %}" alt="">
             </div>
+</a>
           </div>
           <div class="col-md-7 order-1">
+
             <div class="p-5">
               <h2 class="display-4">Medicale</h2>
               <p>Asigurari medicale, Medic de familie </p>
@@ -144,15 +166,19 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5">
+            <a href="/categorie/etc" >
+
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="https://image.flaticon.com/icons/svg/309/309224.svg" alt="">
+              <img class="img-fluid rounded-circle" src="{% static 'acte/img/q.png' %}" alt="">
             </div>
+          </a>
           </div>
           <div class="col-md-7">
             <div class="p-5">
               <h2 class="display-4">Alte Domenii </h2>
               <pa>Asigurari, Alte utilitati, Permise de navigatie</p>
           </div>
+        </a href>
         </div>
       </div>
     </section>
