@@ -2,6 +2,7 @@ from django.conf.urls import url, include
 from django.views.generic import ListView, DetailView
 from acte.models import Document, Institution
 from . import views
+from watson import search as watson
 
 urlpatterns = [
    url(r'^$' , views.index , name ='index'),
@@ -19,6 +20,7 @@ urlpatterns = [
    url(r'^categorie/social$', ListView.as_view(queryset=Document.objects.all().order_by("id"),template_name="acte/social.html")),
    url(r'^categorie/medical$', ListView.as_view(queryset=Document.objects.all().order_by("id"),template_name="acte/medical.html")),
    url(r'^contact$', views.contact, name = 'contact'),
+   url(r"^search/", include("watson.urls", namespace="watson"))
 
 
 ## !! UPDATE THE TEMPLATES
