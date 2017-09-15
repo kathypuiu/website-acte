@@ -20,7 +20,8 @@ urlpatterns = [
    url(r'^categorie/social$', ListView.as_view(queryset=Document.objects.all().order_by("id"),template_name="acte/social.html")),
    url(r'^categorie/medical$', ListView.as_view(queryset=Document.objects.all().order_by("id"),template_name="acte/medical.html")),
    url(r'^contact$', views.contact, name = 'contact'),
-   url(r"^search/", include("watson.urls", namespace="watson"))
+   #url(r"^search/", include("watson.urls", namespace="watson"))
+   url(r'^search/', views.search, name='search')
 
 
 ## !! UPDATE THE TEMPLATES

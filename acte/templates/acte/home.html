@@ -6,10 +6,10 @@
         <div class="container">
           <h1 class="display-1 text-white">ActeNecesare.ro</h1>
           <h2 class="display-4 text-white">Gaseste actele de care ai nevoie</h2>
-          <form>
+          <form action="/search">
           <div class="form-group">
             <div class="col-lg-8">
-              <input class="form-control" id="inputSearch" placeholder="Search" type="text">
+              <input class="form-control" id="inputSearch" placeholder="Search" type="text" name="q" value="{{request.GET.q}}">
             </div>
           </div>
         </form>
