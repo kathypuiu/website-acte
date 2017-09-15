@@ -9,7 +9,9 @@
   </thead>
   <tbody>
     {% for document in object_list %}
+    {% if q in document.name|lower %}
   <tr><td class="bold"><a href="/documente/{{ document.slug }}">{{document.name}}</a></td><td>{{document.institution}}</td><td>{{document.address}}</td></tr>
+       {% endif %}
     {% endfor %}
 </tbody>
 </table>

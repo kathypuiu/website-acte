@@ -10,7 +10,7 @@ def contact(request):
 
 def search(request):
     q = request.GET['q']
-    object_list = Document.objects.filter(name=q).order_by('name')
-    print(object_list)
-    context = {'object_list': object_list}
+    q = q.lower()
+    object_list = Document.objects.order_by('name')
+    context = {'object_list': object_list, 'q': q}
     return render(request, 'acte/search_results.html', context)
