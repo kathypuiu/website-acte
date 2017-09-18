@@ -1,11 +1,12 @@
 {% extends "acte/header.html" %}
 {% block content %}
 {% load staticfiles %}
-<header class="masthead">
+  <header class="masthead">
       <div class="overlay">
         <div class="container">
           <h1 class="display-1 text-white">ActeNecesare.ro</h1>
           <h2 class="display-4 text-white">Gaseste actele de care ai nevoie</h2>
+
           <form action="/search">
           <div class="form-group">
             <div class="col-lg-8">
@@ -13,9 +14,10 @@
             </div>
           </div>
         </form>
+        
         </div>
       </div>
-    </header>
+  </header>
 
     <section>
       <div class="container">
@@ -45,7 +47,7 @@
             <div class="p-5">
               <img class="img-fluid rounded-circle" src="{% static 'acte/img/van.png' %}" alt="">
             </div>
-          </a href>
+          </a>
           </div>
           <div class="col-md-7">
             <div class="p-5">
@@ -60,19 +62,17 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5 order-2">
-  <a href="/categorie/firma">
+            <a href="/categorie/firma">
             <div class="p-5">
               <img class="img-fluid rounded-circle" src="{% static 'acte/img/money.png' %}" alt="">
             </div>
-  </a>
+          </a>
           </div>
           <div class="col-md-7 order-1">
-
             <div class="p-5">
               <h2 class="display-4">Acte Firma </h2>
               <p>Activitati Medicale</p>
             </div>
-
           </div>
         </div>
       </div>
@@ -82,19 +82,17 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5">
-  <a href="/categorie/imobiliar">
+            <a href="/categorie/imobiliar">
             <div class="p-5">
               <img class="img-fluid rounded-circle" src="{% static 'acte/img/hoz.png' %}" alt="">
             </div>
-              </a >
+            </a>
           </div>
           <div class="col-md-7">
-
             <div class="p-5">
               <h2 class="display-4">Acte Imobiliare</h2>
               <p>Vanzare-Cumparare imobiliare, Cadastru si publicitate imobiliara, Inchirieri imobiliare, Asigurari imobiliare </p>
           </div>
-
         </div>
       </div>
     </section>
@@ -103,20 +101,17 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5 order-2">
-
-                <a href="/categorie/social">
+            <a href="/categorie/social">
             <div class="p-5">
               <img class="img-fluid rounded-circle" src="{% static 'acte/img/he.png' %}" alt="">
             </div>
-              </a >
+            </a >
           </div>
           <div class="col-md-7 order-1">
-
             <div class="p-5">
               <h2 class="display-4">Ajutoare Sociale</h2>
               <p>Ajutor de Somaj, Pensionari,Ajutoare pentru copii, Ajutoare pentru Handicap,Subventii </p>
             </div>
-
           </div>
         </div>
       </div>
@@ -145,11 +140,11 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5 order-2">
-<a href="/categorie/medical">
+            <a href="/categorie/medical">
             <div class="p-5">
               <img class="img-fluid rounded-circle" src="{% static 'acte/img/h.png' %}" alt="">
             </div>
-</a>
+          </a>
           </div>
           <div class="col-md-7 order-1">
 
@@ -167,7 +162,6 @@
         <div class="row align-items-center">
           <div class="col-md-5">
             <a href="/categorie/etc" >
-
             <div class="p-5">
               <img class="img-fluid rounded-circle" src="{% static 'acte/img/q.png' %}" alt="">
             </div>
@@ -176,112 +170,11 @@
           <div class="col-md-7">
             <div class="p-5">
               <h2 class="display-4">Alte Domenii </h2>
-              <pa>Asigurari, Alte utilitati, Permise de navigatie</p>
+              <p>Asigurari, Alte utilitati, Permise de navigatie</p>
           </div>
-        </a href>
+        </a>
         </div>
       </div>
     </section>
-
-  <!--   <div class="row">
-       <div class="col s12 m3 l3">
-     <div class="card">
-       <a href="/categorie/identitate">
-       <div class="card-image">
-         <img src="https://image.flaticon.com/icons/svg/148/148858.svg">
-       </div>
-     </a>
-       <div class="card-action">
-         <a href="/categorie/identitate">identitate</a>
-       </div>
-     </div>
-   </div>
-   <div class="col s12 m3 l3">
- <div class="card">
-   <a href="/categorie/auto">
-   <div class="card-image">
-     <img src="{% static 'acte/img/car.svg' %}">
-   </div>
-        </a>
-   <div class="card-action">
-     <a href="/categorie/auto">auto</a>
-   </div>
- </div>
-</div>
-<div class="col s12 m3 l3">
-<div class="card">
-  <a href="/categorie/firma">
-<div class="card-image">
-  <img src="https://image.flaticon.com/icons/png/512/144/144041.png">
-</div>
-     </a>
-<div class="card-action">
-  <a href="/categorie/firma">firma</a>
-</div>
-</div>
-</div>
-<div class="col s12 m3 l3">
-<div class="card">
-  <a href="/categorie/imobiliar">
-<div class="card-image">
-  <img src="https://image.flaticon.com/icons/png/512/543/543977.png">
-</div>
-     </a>
-<div class="card-action">
-  <a href="/categorie/imobiliar">imobiliare</a>
-</div>
-</div>
-</div>
-         </div>
-         <div class="row">
-           <div class="col s12 m3 l3">
-         <div class="card">
-           <a href="/categorie/social">
-           <div class="card-image">
-             <img src="https://image.flaticon.com/icons/png/512/291/291930.png">
-           </div>
-                </a>
-           <div class="card-action">
-             <a href="/categorie/social">social</a>
-           </div>
-         </div>
-       </div>
-       <div class="col s12 m3 l3">
-     <div class="card">
-       <a href="/categorie/educational">
-       <div class="card-image">
-         <img src="https://image.flaticon.com/icons/png/512/295/295417.png">
-       </div>
-            </a>
-       <div class="card-action">
-         <a href="/categorie/educational">educational</a>
-       </div>
-     </div>
-    </div>
-    <div class="col s12 m3 l3">
-    <div class="card">
-      <a href="/categorie/medical">
-    <div class="card-image">
-      <img src="https://image.flaticon.com/icons/png/512/354/354342.png">
-    </div>
-         </a>
-    <div class="card-action">
-      <a href="/categorie/medical">medical</a>
-    </div>
-    </div>
-    </div>
-    <div class="col s12 m3 l3">
-    <div class="card">
-      <a href="/categorie/etc">
-    <div class="card-image">
-      <img src="https://www.flaticon.com/premium-icon/icons/svg/277/277320.svg">
-    </div>
-         </a>
-    <div class="card-action">
-      <a href="/categorie/etc">alte domenii</a>
-    </div>
-    </div>
-    </div>
-  </div> -->
 
 {% endblock %}
